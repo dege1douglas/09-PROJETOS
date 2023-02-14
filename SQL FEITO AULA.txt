@@ -1,0 +1,69 @@
+create database futebolbrasil;
+create table campeonatotratado(
+id int(10) not null,
+rodada int(10) not null,
+dataa date,
+hora time,
+mandante char(30) not null,
+visitante char(30) not null,
+formacao_m varchar(30),
+formacao_v varchar(30),
+tecnico_m varchar(30) null,
+tecnico_v varchar(30) null,
+vencedor varchar(30) not null,
+arena varchar(100),
+m_placar int(4) not null,
+v_placar int(4) not null,
+m_estado varchar(10) not null,
+v_estado varchar(10) not null
+);
+
+SELECT * FROM campeonatotratado;
+
+drop table campeonatotratado;
+
+-- mandante ganhou
+SELECT COUNT(vencedor) FROM campeonatotratado WHERE vencedor=mandante;
+-- time mais ganhou
+SELECT vencedor, count(vencedor) as vitoria FROM campeonatotratado GROUP BY vencedor order by vitoria desc;
+-- estado mais ganhou
+SELECT count(m_estado), m_estado FROM campeonatotratado group by m_estado;
+-- mg ganhou 
+select m_estado, v_estado from campeonatotratado group by vencedor
+-- empate
+SELECT vencedor, count(vencedor), mandante from campeonatotratado where count(mandnate<>vencedor);
+
+
+
+-- goleada mandante
+SELECT mandante, m_placar from campeonatotratado order by m_placar DESC;
+-- goleada visitante
+SELECT visitante, v_placar from campeonatotratado order by v_placar DESC;
+-- quantas rodadas/ano
+SELECT rodada from campeonatotratado group by rodada order by rodada desc;
+-- vitorias/time
+SELECT 
+
+
+
+-- PERGUNTAS:::
+-- Quantas vezes o mandante ganhou? X
+-- Qual time mais ganhou X
+-- Qual estado mais ganhou?
+-- Qual estado tem mais time?
+-- Quantas vezes Minas Gerais ganhou o brasileiro?
+-- Quantas vezes houve empate?
+-- Quantas rodadas houve por ano?
+-- Qual foi a maior goleada?
+-- Goleada do mandante? X
+-- Goleada do visitante? X
+-- Qual time mais perdeu?
+-- Qual time mais ganhou?
+-- Em qual arena houve mais jogos?
+-- Qual time mais marcou gol?
+-- Quantos gols Minas Gerais já fez?
+-- Quantos gols o Cruzeiro já fez desde de 2013?
+-- Quantos gols o Atlético já fez desde de 2013?
+-- Quantos gols o Flamengo já fez desde de 2013?
+-- Quantos gols o Palmeiras já fez desde de 2013?
+-- Quantas vitórias cada time conseguiu?
