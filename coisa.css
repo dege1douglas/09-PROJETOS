@@ -1,0 +1,60 @@
+.h{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(224, 214, 124);
+}
+a{
+    color: brown;
+}
+.a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.img1{
+    border-radius: 20px;
+    
+    position: relative;
+}
+.img2{
+    
+    position: relative;
+    top: -55px;
+    left: 200px
+}
+.img3{
+    
+    position: relative;
+    top: -111px;
+    left: 400px
+}
+.img4{
+    
+    position: relative;
+    top: -167px;
+    left: 600px
+}
+.img5{
+    
+    position: relative;
+    top: -223px;
+    left: 800px
+}
+.img6{
+    
+    position: relative;
+    top: -279px;
+    left: 1000px
+}
+.img7{
+    border-radius: 20px;
+    
+    fill: gray;
+    position: relative;
+    top: -335px;
+    left: 1200px
+    
+}
+.cria{
+    position: relative;
+    top: -300px;
+    background-color: aquamarine;
+
+}
