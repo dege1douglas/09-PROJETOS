@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TABELAS E FORMS</title>
+    <link rel="stylesheet" href="coisa.css">
+    <link rel="icon" type="image/png" href="https://openseauserdata.com/files/b261626a159edf64a8a92aa7306053b8.png">
+</head>
+
+<body>
+    <script>window.alert("BEM VINDO!")</script>
+    <div class="af">
+    <h1><b>AULA DIA 06/02</b></h1>
+    <h2><ul type="square">
+        <li>Tabelas</li>
+        <li>Formulários</li>
+        <li>e mais...</li>
+    </ul></h2>
+    </div>
+    <hr color="black">
+
+    
+    <div class="tabela">
+        <p>
+            <h1>TABELAZINHAINHA</h1>
+            <center>
+            <table>
+                <tr><th><a href="https://www.twitch.tv/liminhag0d" target="_blank">TRIGONOMETRIA</a></th></tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td> 30° </td>
+                    <td> 45° </td>
+                    <td> 60° </td>
+                </tr>
+                <tr>
+                    <td>SENO</td>
+                    <td> 1/2  </td>
+                    <td> √2/2 </td>
+                    <td> √3/2 </td>
+                </tr>
+                <tr>
+                    <td>COSSENO</td>
+                    <td> √3/2 </td>
+                    <td> √2/2 </td>
+                    <td> 1/2  </td>
+                </tr>
+                <tr>
+                    <td>TANGENTE</td>
+                    <td> √3/1 </td>
+                    <td> 1    </td>
+                    <td> √3   </td>
+                </tr>
+            </table>
+        </p>
+    </div>
+    </center>
+    <div class="forms">
+        <br>
+        <br>
+        <hr color="black">
+        <br>
+        <h1>FORMULARIOZINHOINHO</h1>
+        <form>
+            <center>
+            <h1>LIVROS</h1>
+            <p> <h3> Ahhhh! <b> Os livros</b>... grandes companheiros dos humanos, acompanham e carregam a história do mundo. <br>
+            Na geração tecnológica, os livros estão sendo trocados por conteúdos variados de entretenimento. <br>
+            Diga você, como tem sido sua rotina de leitura.... <br></h3></p>
+<br>
+        <img src="https://7551bdfc54adf45425bb-e1819ba959867bdb3382b3652a5f5ff1.ssl.cf5.rackcdn.com/animations/467/1435256441-Young_animation_education062515_02.gif" 
+        alt="livrin voando"
+        height="500px">
+        </center>
+            <h3>(1) Nome? <br></h3>
+            <input type="text" name="nome">
+            <h3>(2) Idade? <br></h3>
+            <input type="number" name="idade">
+            <h3>(3) Frequencia de leitura?
+                <br>
+            <input type="radio" name="frequencia" value="1">Raramente<br>
+            <input type="radio" name="frequencia" value="2">Frequentemente<br>
+            <input type="radio" name="frequencia" value="3">Somente os post na internet<br>
+            <input type="radio" name="frequencia" value="4">Nunca leio<br>
+            </h3>
+            <h3>(4) Categorias preferidas.
+                <br>
+            <input type="checkbox" name="categ" value="1">Ação<br>
+            <input type="checkbox" name="categ" value="2">Aventura<br>
+            <input type="checkbox" name="categ" value="3">Comédia<br>
+            <input type="checkbox" name="categ" value="4">Fantasia<br>
+            <input type="checkbox" name="categ" value="5">Ficção<br>
+            <input type="checkbox" name="categ" value="6">Terror<br>
+            <input type="checkbox" name="categ" value="7">Romance<br>
+            <input type="checkbox" name="categ" value="8">Policial/mistério<br>
+
+            </h3>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: lightpink;
+}
+.af{
+    background-color: lightpink;
+}
+.forms{
+    background-color: lightpink;
+}
+.tabela{
+    background-color: lightpink;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 4px solid #00886a;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 10px;
+}
+td{
+    border: 1px solid #00886a;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 10px;
+}
+
+
