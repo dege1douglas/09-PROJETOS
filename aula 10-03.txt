@@ -1,0 +1,64 @@
+legend{
+    font-size: xx-large;
+    font-family:fantasy; 
+    text-shadow: 0cqmax;
+    font-stretch: narrower;
+}
+body{
+    background-color: lightgreen;
+}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>PAGE FEEDBACK</title>
+    <link rel="stylesheet" href="formulinha.css">
+    <link rel="icon" type="image/png" href="https://cdn.ome.lt/zbZuf1BqmUiyx0rm46JPQk_0_dI=/1200x630/smart/extras/conteudos/E3nq1AjWYAg8E4c.jpg">
+<head>
+<title>
+        formulario
+    </title></head>
+    
+    <body>
+        <div class="box">
+        <form action="">
+            <hr>
+                <center><legend><b><h1>PARA DAR FEEDBACK - INSIRA OS DADOS</h1></b></legend></center>
+                <hr>
+                <br>
+                <div class="ImputBox0">
+                    Cor
+                    <input type="color" name="cor" value="#AABBCC">
+                </div>
+                <br>
+                <div class="InputBox1">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" class="inputUser" required="">
+                </div>
+                <br>
+                <div class="InputBox2">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" class="inputUser" required="">
+                </div>
+                <br>
+                <div class="InputBox4">
+                    <label for="telyht0">Telefone</label>
+                    <input type="text" name="tel" id="tel" class="inputUser" required="">
+                </div>
+                <br>
+                <div class="sexin">
+                Sexo:
+                <select name="sexoo">
+                <option value="Fem">Feminino</option>
+                <option value="Masc">Masculino</option>
+                <option value="Out">Outro</option>
+                </select>
+                </div>
+                <br>
+                <input type="submit" value="Enviar">
+                    
+                </div>
+        </form></div> 
+</body></html>
