@@ -1,0 +1,134 @@
+DOUGLAS DA COSTA GOMES --- ANDRE MARCOS
+--- SALA: VNDEV 2M - MANHÃ
+
+01- arquivo em js.
+---
+const button = document.querySelector('button')
+
+const ul = document.querySelector('ul')
+
+
+const lis = document.querySelectorAll('li')
+
+lis.forEach(li => {
+    li.addEventListener('click', event => {
+        const clickedElement = event.target
+
+        clickedElement.innerHTML = '✔️'
+
+        clickedElement.style.textAlign = 'center'
+
+        clickedElement.style.backgroundColor = 'blue'
+
+      //clickedElement.remove()
+
+    })
+})
+button.addEventListener('click', () => {
+  document.querySelector('h2').remove()
+})
+
+button.addEventListener('click', () => {
+    let item = prompt('Nome do item')
+    const li = document.createElement('h3')
+    const p = document.createElement('p')
+
+    p.textContent = ''
+    li.textContent = `${item}`
+    ul.append(li)
+    li.style.width = '200px'
+    li.style.height = '30px'
+    li.style.color = 'green'
+    li.style.borderRadius = '25px'
+
+    ul.append(p)
+
+    
+    li.style.backgroundColor = 'lightgreen'
+
+    
+
+    li.addEventListener('click', event => {
+        const clickedElement = event.target
+
+        clickedElement.innerHTML = '✔️'
+
+        clickedElement.style.textAlign = 'center'
+
+        clickedElement.style.backgroundColor = 'blue'
+    })
+})
+---
+02. arquivo em html.
+---
+<DOCTYPE html>
+<html lang="pt-br"><head>
+    <meta charset="UTF-8">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="./estiloListaDeTarefas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista</h1>
+        <h2>Sem nenhuma tarefa👀</h2>
+        <ul></ul>
+        <button>Adcionar item</button>
+    </div>
+
+
+
+<script src="./listaDeTarefas.js"></script>
+
+</body></html>
+---
+03. arquivo em css.
+---
+ul {
+    text-align: center;
+    padding: 0;
+}
+.item {
+    list-style-type: none;
+    max-width: 200px;
+    padding: 8px;
+    margin: 8px 0;
+    background: #eee;
+    border: 1px dotted #ddd;
+}
+h2 {
+    
+    width: 250px;
+    left: 300px;
+    border: 5px;
+}
+h1 {
+    color:  blueviolet;
+    background-color: aquamarine;
+    border: 2px;
+    width: 80px;
+    border-radius: 25px;
+}
+body {
+    background-color: aqua;
+}
+
+button {
+    height: 40px;
+    background-color: black;
+    color: orange;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    display: grid;
+    text-align: center;
+}
+
+---
+
+---
+
+---
