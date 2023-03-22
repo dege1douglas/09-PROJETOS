@@ -1,4 +1,4 @@
-* {
+*{
     overflow: none;
     padding: 0;
     margin: 0;
@@ -34,11 +34,30 @@
     border-radius: 15px;
     cursor: pointer;
 }
+.botao2{
+    width: 160px;
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.botao2:hover{
+    background-color: #3e8e41;
+}
+.botao2:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translate(4px);
+}
 body{
     background-color:silver;
 }
 .kiss{
     text-align: center;
+}
+.baria{
+    box-sizing: border-box;
+    margin-left: 80px;
 }
 .centro{
     background-color: #fff;
