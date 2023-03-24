@@ -1,127 +1,55 @@
-*{
-    overflow: none;
-    padding: 0;
-    margin: 0;
+function sacanage(a, b, c){
+    console.log(a*b+c)
 }
-.cabeceta{
-    margin: -10px;
-    border: 3px dotted black;
-    padding: -10px -10px;
-    text-shadow: 2px 2px 10px;
-    background-image: url("https://static-cse.canva.com/blob/560659/texture.jpg");
-    color: aliceblue;
-    font-style: inherit;
-    font-family: sacanage;
-    font-size: 40px;
-    height: 300px;
-    overflow: none;
-}
-.jorge{
-    color: bisque;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    margin: -30px;
-}
-.botao1{
-    position: relative;
-    top: -250px;
-    right: -1200px;
-}
-.a{
-    height: 40px;
-    background-color: black;
-    color: #fff; 
-    border-radius: 15px;
-    cursor: pointer;
-}
-.botao2{
-    width: 160px;
-    background-color: black;
-    color: #fff;
-    border-radius: 15px;
-    cursor: pointer;
-}
-.botao2:hover{
-    background-color: #3e8e41;
-}
-.botao2:active{
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translate(4px);
-}
-body{
-    background-color:silver;
-}
-.kiss{
-    text-align: center;
-}
-.baria{
-    box-sizing: border-box;
-    margin-left: 80px;
-}
-.centro{
-    background-color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.centro{
-    box-sizing: border-box;
-    padding: 50px
-}
-.centro{
-    text-align: justify;
-}
-.a:hover {background-color: #3e8e41
-}
-.centro:hover{background-color: darkgrey;
+    sacanage(4,6,3)
 
-}
-.a:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-.centr{
-    text-align: right;
-}
-.centro1{
-    background-color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.centro1{
-    box-sizing: border-box;
-    padding: 50px}
-.centro1:hover{background-color: darkgrey;}
-.centro2{
-    background-color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.centro2{
-    box-sizing: border-box;
-    padding: 50px}
-.centro2:hover{background-color: darkgrey;}
-.centro3{
-    background-color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.centro3{
-    box-sizing: border-box;
-    padding: 50px}
-.centro3:hover{background-color: darkgrey;}
-.centro4{
-    background-color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-.centro4{
-    box-sizing: border-box;
-    padding: 50px}
-.centro4:hover{background-color: darkgrey;}
+/*
+equação do segundo grau
+function raiz(){
+    var a = parseFloat(document.getElementById("num1").value);
+    var b = parseFloat(document.getElementById("num2").value);
+    var c = parseFloat(document.getElementById("num3").value);
+    ans = document.getElementById('resposta');
 
-@font-face{
-    font-family: sacanage;
-    src: url(Cartoon\ Queen.ttf)
-}
+    var delta = (b*b) - 4*a*c;
+
+    if (delta>0){
+     raiz1 = (-b + Math.sqrt(delta) )/(2*a);
+     raiz2 = (-b - Math.sqrt(delta) )/(2*a);
+
+     ans.innerHTML = "Raiz 1: " + raiz1 + "<br/>" +"Raiz 2: " + raiz2;
+    }
+    else{
+     if (delta==0){
+      raiz = (-b + Math.sqrt(delta) )/(2*a);
+      ans.innerHTML="Raiz dupla: " + raiz;
+     }
+     else{
+      real = (-b)/(2*a);
+      img1  = Math.sqrt(-delta)/(2*a);
+      img2  = - Math.sqrt(-delta)/(2*a);
+
+      ans.innerHTML = "Raiz 1: " + real + "+" + img1+"i"+"<br/>" +
+          "Raiz 2: " + real + "+" + img2+"i"
+     }
+    }
+  }
+*/
+
+/*
+testezando 
+*/
+function mOver(obj)
+        {
+            obj.innerHTML="SEGREDO DESCOBERTO!"
+        }    
+        function mOut(obj)
+        {
+            obj.innerHTML="Terceiro romance de George Orwell, publicado em 1936, A flor da Inglaterra é uma fábula realista sobre a sociedade de classes inglesa e seu submundo literário, pintada em cores fortes pelo célebre espírito crítico e satírico do autor."
+        }
+        function mOver2(obj){
+            obj.innerHTML='OUTRO SEGREDO!'
+        }
+        function mOut2(obj){
+            obj.innerHTML='Sacana, pare de chacolhar o mouse sobre a tela! hehehehehe'
+        }
