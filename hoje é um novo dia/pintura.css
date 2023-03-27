@@ -1,103 +1,103 @@
 * {
-    estouro : nenhum;
-    preenchimento :  0 ;
-    margem :  0 ;
+    overflow: none;
+    padding: 0;
+    margin: 0;
 }
-. cabeceta {
-    margem :  -10 px ;
-    borda :  3 px pontilhada de preto;
-    preenchimento :  -10 px  -10 px ;
-    text-shadow :  2 px  2 px  10 px ;
-    imagem de fundo :  url ( "https://static-cse.canva.com/blob/560659/texture.jpg" );
-    cor : aliceblue;
-    estilo da fonte : herdar;
-    font-family :  'Arial Narrow Bold' , sem serifa;
-    tamanho da fonte :  40 px ;
-    altura :  300 px ;
-    estouro : nenhum;
+.cabeceta{
+    margin: -10px;
+    border: 3px dotted black;
+    padding: -10px -10px;
+    text-shadow: 2px 2px 10px;
+    background-image: url("https://static-cse.canva.com/blob/560659/texture.jpg");
+    color: aliceblue;
+    font-style: inherit;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    height: 300px;
+    overflow: none;
 }
-. jorge {
-    cor : bisque;
-    font-family : 'Segoe UI' , Tahoma , Geneva , Verdana , sans-serif;
-    tamanho da fonte :  20 px ;
-    margem :  -30 px ;
+.jorge{
+    color: bisque;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: -30px;
 }
-. botao1 {
-    posição : relativa;
-    superior :  -250 px ;
-    direita :  -1200 px ;
+.botao1{
+    position: relative;
+    top: -250px;
+    right: -1200px;
 }
-. um {
-    altura :  40px ; _
-    cor de fundo : preto;
-    cor :  #fff ; _
-    raio da borda :  15 px ;
-    cursor : ponteiro;
+.a{
+    height: 40px;
+    background-color: black;
+    color: #fff; 
+    border-radius: 15px;
+    cursor: pointer;
 }
-corpo {
-    cor de fundo : prata;
+body{
+    background-color:silver;
 }
-. beijo {
-    alinhamento de texto : centro;
+.kiss{
+    text-align: center;
 }
-. centro {
-    cor de fundo :  # fff ;
-    margem esquerda :  20 px ;
-    margem direita :  20 px ;
+.centro{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-. centro {
-    tamanho da caixa : caixa de borda;
-    Preenchimento :  50 px
+.centro{
+    box-sizing: border-box;
+    padding: 50px
 }
-. centro {
-    text-align : justificar;
+.centro{
+    text-align: justify;
 }
-. a : hover { background-color :  # 3e8e41
+.a:hover {background-color: #3e8e41
 }
-. centro : hover { background-color : darkgrey;
+.centro:hover{background-color: darkgrey;
 
 }
-. a : ativo {
-  cor de fundo :  # 3e8e41 ;
-  box-shadow :  0  5 px  # 666 ;
-  transformar :  traduzirY ( 4 px );
+.a:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
-. centro {
-    alinhamento de texto : direito;
+.centr{
+    text-align: right;
 }
-. centro1 {
-    cor de fundo :  # fff ;
-    margem esquerda :  20 px ;
-    margem direita :  20 px ;
+.centro1{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-. centro1 {
-    tamanho da caixa : caixa de borda;
-    preenchimento :  50 px }
-. centro1 : hover { background-color : darkgrey;}
-. centro2 {
-    cor de fundo :  # fff ;
-    margem esquerda :  20 px ;
-    margem direita :  20 px ;
+.centro1{
+    box-sizing: border-box;
+    padding: 50px}
+.centro1:hover{background-color: darkgrey;}
+.centro2{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-. centro2 {
-    tamanho da caixa : caixa de borda;
-    preenchimento :  50 px }
-. centro2 : hover { background-color : darkgrey;}
-. centro3 {
-    cor de fundo :  # fff ;
-    margem esquerda :  20 px ;
-    margem direita :  20 px ;
+.centro2{
+    box-sizing: border-box;
+    padding: 50px}
+.centro2:hover{background-color: darkgrey;}
+.centro3{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-. centro3 {
-    tamanho da caixa : caixa de borda;
-    preenchimento :  50 px }
-. centro3 : hover { background-color : darkgrey;}
-. centro4 {
-    cor de fundo :  # fff ;
-    margem esquerda :  20 px ;
-    margem direita :  20 px ;
+.centro3{
+    box-sizing: border-box;
+    padding: 50px}
+.centro3:hover{background-color: darkgrey;}
+.centro4{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-. centro4 {
-    tamanho da caixa : caixa de borda;
-    preenchimento :  50 px }
-. centro4 : hover { background-color : darkgrey;}
+.centro4{
+    box-sizing: border-box;
+    padding: 50px}
+.centro4:hover{background-color: darkgrey;}
