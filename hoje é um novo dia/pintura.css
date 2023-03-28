@@ -1,0 +1,126 @@
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.cabeceta{
+    border: 3px dotted black;
+    padding: -5px -5px;
+    text-shadow: 1px 1px 10px white;
+    background-image: url("https://img.freepik.com/fotos-gratis/bela-tropical-deixa-closeup_23-2148245137.jpg?w=740&t=st=1680007498~exp=1680008098~hmac=8691839b9f0c6c96b3f3c8c1de109ed0223f6f0c19af5a351f4d751f200e2503");
+    color:fuchsia;
+    font-style:oblique;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    height: 300px;
+}
+.jorge{
+    color:darkred;
+    text-shadow: 1px 1px 10px #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin: -170px;
+    position: relative;
+    left: 500px;
+}
+.h6{
+    position: relative;
+    top: -100px;
+}
+.botao1{
+    position: relative;
+    top: -250px;
+    right: -1200px;
+}
+.a{
+    height: 40px;
+    background-color: black;
+    color: #fff; 
+    border-radius: 15px;
+    cursor: pointer;
+}
+body{
+    background-color:silver;
+}
+.kiss{
+    text-align: center;
+}
+.centro{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.centro{
+    box-sizing: border-box;
+    padding: 50px
+}
+.centro{
+    text-align: justify;
+}
+.a:hover {background-color: #3e8e41
+}
+.centro:hover{background-color: darkgrey;}
+.flex-degrade{
+    display: flex;
+    flex-direction:row;
+}
+.a:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.centr{
+    position: relative;
+    right: -1100px;
+}
+.centro1{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.centro1{
+    box-sizing: border-box;
+    padding: 50px}
+.centro1:hover{background-color: darkgrey;}
+.centro2{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.centro2{
+    box-sizing: border-box;
+    padding: 50px}
+.centro2:hover{background-color: darkgrey;}
+.centro3{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.centro3{
+    box-sizing: border-box;
+    padding: 50px}
+.centro3:hover{background-color: darkgrey;}
+.centro4{
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.centro4{
+    box-sizing: border-box;
+    padding: 50px}
+.centro4:hover{background-color: darkgrey;}
+.Bianca621{
+    text-decoration: none;
+    color: black;
+}
+.Jessica{
+    text-decoration: none;
+    color: black;
+}
+.Naylla{
+    text-decoration: none;
+    color: black;
+}
+.Patricia{
+    text-decoration: none;
+    color: black;
+}
