@@ -1,0 +1,112 @@
+* {
+    preenchimento :  0 ;
+    margem :  0 ;
+    tamanho da caixa : caixa de borda;
+    font-family :  'Poppins' , sem serifa;
+}
+corpo {
+    imagem de fundo :  url (background.png);
+    posição de fundo : centro;
+    repetição de fundo : sem repetição;
+    tamanho do plano de fundo : capa;
+    exibição : flexível;
+    itens de alinhamento : centro;
+    justificar-conteúdo : centro;
+    preenchimento :  20 px ;
+    altura mínima :  100 vh ;
+}
+. w50 {
+    largura :  50 % ;
+    flutuar : esquerda;
+    padding-right :  15 px ;
+}
+. caixa {
+    exibição : flexível;
+    largura :  930 px ;
+}
+. img-box {
+    cor de fundo :  rgba ( 255 ,  255 ,  255 ,  0,5 );
+    largura :  50 % ;
+    exibição : flexível;
+    itens de alinhamento : centro;
+    preenchimento :  20 px ;
+    raio da borda :  20 px   0  0  20 px ;
+}
+. img-box  img {
+    largura :  100 % ;
+}
+. caixa de formulário {
+    cor de fundo :  rgba ( 255 ,  255 ,  255 ,  0,4 );
+    filtro de pano de fundo :  desfoque ( 40 px );
+    preenchimento :  30 px  40 px ;
+    largura :  50 % ;
+    raio da borda :  0  20 px  20 px  0 ;
+}
+. caixa de formulário  h2 {
+    tamanho da fonte :  30 px ;
+}
+. caixa de formulário  p {
+    peso da fonte : negrito;
+    cor :  # 3D3D3D ;
+}
+. caixa de formulário  p  a {
+    cor :  # FF008A ;
+    decoração de texto : nenhum;
+}
+. form-box  form {
+    margem :  20 px  0 ;
+}
+forma . grupo de entrada {
+    margem inferior :  15 px ;
+}
+forma . rótulo do grupo de entrada  {
+    cor :  # 3D3D3D ;
+    peso da fonte : negrito;
+    exibição : bloco;
+    margem inferior :  5 px ;
+}
+forma . input-group  input {
+    largura :  100 % ;
+    altura :  47 px ;
+    cor de fundo :  rgba ( 255 ,  255 ,  255 ,  0,32 );
+    raio da borda :  20 px ;
+    contorno : nenhum;
+    borda :  2 px sólido transparente;
+    preenchimento :  15 px ;
+    tamanho da fonte :  15 px ;
+    cor :  # 616161 ;
+    transição : todos os 0,4 s de facilidade;
+}
+forma . entrada do grupo de entrada  : foco {
+    cor da borda :  # ff008869 ;
+}
+forma . botão de grupo de entrada  {
+    largura :  100 % ;
+    altura :  47 px ;
+    plano de fundo :  # FF008A ;
+    raio da borda :  20 px ;
+    contorno : nenhum;
+    fronteira : nenhum;
+    margem superior :  15 px ;
+    cor : branco;
+    cursor : ponteiro;
+    tamanho da fonte :  16 px ;
+}
+@media ( largura máxima : 930 px ) {
+    . img-box {
+        exibição : nenhum;
+    }
+    . caixa {
+        largura :  700 px ;
+    }
+    . caixa de formulário {
+        largura :  100 % ;
+        raio da borda :  20 px ;
+    }
+}
+@media ( largura máxima : 500 px ) {
+    . w50 {
+        largura :  100 % ;
+        preenchimento :  0 ;
+    }
+}

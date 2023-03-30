@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>--Formulário Contato--</title>
+<meta charset="utf-8" />
+
+  <h1>Entre em contato</h1>
+
+  <div id="area">
+    <form id="Formulario" autocomplete="off">
+
+    <h3><legend>Formulario</legend></h3>
+    <input type="text" id="nomeid" placeholder="Talita kelen" required="required" name="nome" />
+  <label for="nome">Nome</label>
+  </div>
+  <div>
+    <input type="number" id="cpfid" placeholder="CPF" required="rewuired" name="CPF" />
+    <label for="CPF">CPF</label>
+  </div>
+  <div>
+    <div>
+             Sexo:
+    <input type="radio" name="sexo" value="Femenino">Femenino
+    <input type="radio" name="sexo" value="Masculino">Masculino
+    <input type="radio" name="sexo" value="Outro">Outros
+  </div>
+  <div>
+    <select id="estado" name="estado">
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+        <option value="EX">Estrangeiro</option>
+    </select>
+  </div>
+    <div>
+      <input type="date" name="nascimento"
+       min="1950-01-01"    max="2023-12-31">
+      <label for="Data de Nascimento">Data de Nascimento</label>
+
+    </div>
+    <div>
+    <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+    <label for="fone">Fone</label>
+     </div>
+  
+  <div>
+  <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+  <input type="email" id="emailid2" placeholder="Confirme seu email" name="email">
+  <label for="email">Email</label>
+ </div>
+<div>
+
+  <label for="Salario">Pretenção Salárial</label>
+  <input type="range" id="salario" name="salario" min="1350" max="5000" oninput="this.form.versalario.value=this.value">
+  <input type="number" name="versalario" min="1350" max="5000" value="1350" oninput="this.form.salario.value=this.value">
+</div>
+<div>
+    <label for="Usuario">Usuario</label>
+<input type="text" id="Usuario" name="Usuario" required placeholder="Insira seu nome de Usuario"> <br>
+
+</div>
+<div>
+    <label for="senha1">Senha:</label>
+    <input type="password" id="senha1" name="senha1" required placeholder="Insira sua Senha"><br>
+    <input type="password" id="senha2" name="senha2" required placeholder="Confirme sua senha"><br>
+
+</div>
+
+  <p><textarea placeholder="Deixe sua opnião"></textarea></p>
+
+  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+  </div>
+</form>
+</head>
+</fieldset>
+<title>Meu Formulario Personalizado</title>
+<link rel="stylesheet" href="css.css.css">
+
+</html>

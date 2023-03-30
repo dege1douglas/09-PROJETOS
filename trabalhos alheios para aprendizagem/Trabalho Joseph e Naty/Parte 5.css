@@ -1,0 +1,47 @@
+html {
+    background-color: aqua;
+}
+
+
+.titulo {
+    font-family: verdana;
+    color: red;
+    text-align: center;
+  }
+  
+  body {
+    font-family: times new roman;
+  }
+  
+  .titT {
+    background-color: #ffffff;
+    color: blue;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    
+  }
+  
+  .nome {
+    background-color: #ff0000;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .meio {
+    background-color: #fbff00;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .fim {
+    background-color: #0b8006;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .media {
+    background-color: white;
+    color: blue;
+    font-weight:bolder;
+  }

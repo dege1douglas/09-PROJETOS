@@ -1,0 +1,15 @@
+img {
+    width: 600px;
+    height: 500px
+}
+
+.textImg {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.textD, img {
+    display: inline-block;
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:xx-large
+}

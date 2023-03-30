@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+
+     <head>
+      <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+          <title>Cadastro | Formulario</title><!--Informação sobre o titulo -->
+      <link rel="stylesheet" href="css.css" /><!-- navegação entre paginas--> 
+      
+  <body>
+            <div class="wrapper" align="center"> 
+      <!-- Formulário -->
+      <form action="" id="formulario"  method="POST">
+
+        <legend>
+          Cadastro do Formulario
+        </legend>
+                <fieldset class="formulario__campo"><!-- Formulários do tipo Caixas de Texto  -->
+                    <label class="campo__etiqueta" for="nome">Nome</label>
+                    <input name="nome" id="nome" class="campo__escrita" type="text" minlength="3" required
+                  placeholder="Insira seu Nome">
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset>
+                <label class="formulario__campo" for="sobrenome">Sobrenome:</label>
+                  <input
+                  name="nome"
+                    type="text"  
+                    id="sobrenome" minlength="3" required
+                    placeholder="Insira seu sobrenome">
+                    <span class="mensagem-erro"></span><!--conteiner generico em linha para conteúdo fraseado-->
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="email">E-mail</label>
+                    <input name="email" id="email" class="campo__escrita" type="email" minlength="4" required 
+                    placeholder="Insira seu e-mail">
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="colunas">
+                  <div class="input-group">
+                    <label for="estado">Estado:</label>
+                   <select name="Estado" id="Estado">
+                      <option value="">informar...</option>
+                      <option value="AC">Acre</option>
+                      <option value="AL">Alagoas</option>
+                      <option value="AP">Amapá</option>
+                      <option value="AM">Amazonas</option>
+                      <option value="BA">Bahia</option>
+                      <option value="CE">Ceará</option>
+                      <option value="DF">Distrito Federal</option>
+                      <option value="ES">Espírito Santo</option>
+                      <option value="GO">Goiás</option>
+                      <option value="MA">Maranhão</option>
+                      <option value="MT">Mato Grosso</option>
+                      <option value="MS">Mato Grosso do Sul</option>
+                      <option value="MG">Minas Gerais</option>
+                      <option value="PA">Pará</option>
+                      <option value="PB">Paraíba</option>
+                      <option value="PR">Paraná</option>
+                      <option value="PE">Pernambuco</option>
+                      <option value="PI">Piauí</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="RO">Rondônia</option>
+                      <option value="RR">Roraima</option>
+                      <option value="SC">Santa Catarina</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="SE">Sergipe</option>
+                      <option value="TO">Tocantins</option>
+                      <option value="EX">Estrangeiro</option>
+                  </select>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <div class="colunas">
+                        <div class="input-group">
+                          <label for="sexo">Sexo:</label>
+                          <select name="sexo" id="sexo">
+                            <option value="">informar...</option>
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                            <option value="x">Não informar</option>
+                           <span class="mensagem-erro"></span>
+                          </select>
+                  </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="cpf">CPF (apenas números)</label>
+                    <input name="cpf" id="cpf" class="campo_escrita campo_escrita--menor" required type="text"
+                    minlength="11" maxlength="14" 
+                    placeholder="Insira seu CPF">
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="aniversario">Data de nascimento</label>
+                    <input name="aniversario" id="aniversario" class="campo_escrita campo_escrita--menor" type="date"
+                        required />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset
+                  class="formulario__campo">
+                    <label for="Salario">Pretenção Salárial</label>
+                    <input type="range" id="salario" name="salario" min="1350" max="5000" oninput="this.form.versalario.value=this.value">
+                    <input type="number" name="versalario" min="1350" max="5000" value="1350" oninput="this.form.salario.value=this.value">
+                  </fieldset>
+                  <fieldset
+                  label for="Usuario">Usuario</label>
+                  <input type="text" id="Usuario" name="Usuario" required placeholder="Insira seu nome de Usuario"> <br>
+                  
+                  </fieldset>
+                  <fieldset
+                
+                      label for="senha1">Senha:</label>
+                      <input type="password" id="senha1" name="senha1" required placeholder="Insira sua Senha" minlength="8"><br>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <input type="password" id="senha2" name="senha2" required placeholder="Confirme sua senha" minlength="8"><br>
+                  
+                  </fieldset>
+                  <fieldset
+                  
+                    p><textarea placeholder="Deixe sua opnião"></textarea></p
+                    minlength="11" maxlength="100" >
+
+                     <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+                    
+        
+          </fieldset>
+  
+            </form>
+            </div>
+          </body>
+          </head>
+
+</html>
+    <script language="JavaScript" >
+      function enviardados(){
+      
+      if(document.dados.tx_nome.value=="" ||
+      document.dados.tx_nome.value.length < 8)
+      {
+      alert( "Preencha campo NOME corretamente!" );
+      document.dados.tx_nome.focus();
+      return false;
+      }
+      
+      
+      if( document.dados.tx_email.value=="" ||
+      document.dados.tx_email.value.indexOf('@')==-1 ||
+      document.dados.tx_email.value.indexOf('.')==-1 )
+      {
+      alert( "Preencha campo E-MAIL corretamente!" );
+      document.dados.tx_email.focus();
+      return false;
+      }
+      
+      if (document.dados.tx_mensagem.value=="")
+      {
+      alert( "Preencha o campo MENSAGEM!" );
+      document.dados.tx_mensagem.focus();
+      return false;
+      }
+      if (document.dados.tx_mensagem.value=="")
+      {
+      alert( "Preencha a Senha com Letras e Numeros com ate 5 caracteres!" );
+      document.dados.tx_mensagem.focus();
+      return false;
+      }
+      
+      if (document.dados.tx_mensagem.value.length < 50 )
+      {
+      alert( "É necessario preencher o campo MENSAGEM com mais de 10 caracteres!" );
+      document.dados.tx_mensagem.focus();
+      return false;
+      }
+      
+      return true;
+      }
+      
+      </script>
