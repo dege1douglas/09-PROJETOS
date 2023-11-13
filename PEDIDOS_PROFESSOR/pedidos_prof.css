@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9b51e0;
+    overflow: hidden;
+}
+
+.container .conteudo-da-tela {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e4e4e4;
+    width: 100%;
+    height: 90%;
+}
+
+.container .conteudo-da-tela nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    border-radius: 3px;
+    list-style: none;
+}
+
+
+
+#pesquisar {
+    width: 25%;
+    height: 30px;
+    font-size: 18px;
+    padding: 0 0 0 15px;
+    border-radius: 20px;
+    border: 0;
+    background-color: #e4e4e4;
+    margin: 20px 0 0 0;
+}
+
+.container .conteudo-da-tela nav  div {
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container .conteudo-da-tela .conteudo-do-inventario {
+    width: 100%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.conteudo-da-tela .itens-do-inventario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 80%;
+}
+
+.itens-do-inventario .itens {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 80%;
+    padding: 15px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.itens-do-inventario ul {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-self: center;
+    position: relative;
+}
+
+.itens-do-inventario ul div {
+    width: 150px; /* Defina uma largura fixa para as colunas */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e4;
+    border-radius: 3px;
+    font-family: sans-serif;
+}
+
+.itens-do-inventario .etiquetas {
+    width: 100%;
+}
+
+.itens-do-inventario ul li {
+    list-style: none;
+}
+
+.conteudo-do-inventario .adicionar {
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+    margin: 0 40px 0 0;
+    align-items: center;
+    cursor: pointer;
+}
+
+.conteudo-do-inventario .adicionar p {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.conteudo-do-inventario .adicionar img {
+    width: 30px;
+}
+
+.itens {
+    width: 100%;
+}
+
+.itens .item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.nome {
+    width: 200px; 
+}
+
+.quantidade-lab {
+    width: 150px;
+}
+
+.quantidade-almox {
+    width: 150px;
+}
+
+.item img {
+    position: absolute;
+}
+
+.itens .item div img {
+    width: 18px;
+    cursor: pointer;
+    right: 0;
+}
+
+.itens .item div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.itens .item div .editar {
+    width: 18px;
+    cursor: pointer;
+}
+
+
+/*Estilo do popup : */
+
+.overlay {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; 
+    display: none;
+}
+
+.container-popup {
+    background-color: #fff; 
+    border-radius: 30px;
+    padding: 20px;
+    font-family: sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    position: absolute;
+    left: 320px;
+    display: none;
+}
+
+.container-popup img {
+    width: 50px;
+    margin: 0 0 0 350px;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.animacao-popup-aparecer {
+    animation: animacao-popup-aparecer 1s forwards;
+}
+
+@keyframes animacao-popup-aparecer {
+    0% {
+        top: -500px;
+    }
+    100% {
+        top: 20%;
+    }
+}
+
+
+.container-popup h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.container-popup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container-popup input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.confirmar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 30px;
+    background-color:#a1ffa1;
+}
+
+.container-popup button:nth-child(1) {
+    background-color: #ff9292; 
+}
+
+.container-popup button:nth-child(2) {
+    background-color: #a1ffa1; 
+}
+
+
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9b51e0; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+@media (max-width: 768px) 
+{
+    /* Estilos para telas menores, como tablets e celulares */
+
+    .itens-do-inventario ul {
+        right: 20px;
+    }
+    .itens-do-inventario ul div {
+        width: 120px;
+    }
+    .itens-do-inventario ul div li {
+        font-size: 15px;
+    }
+    #pesquisar {
+        width: 400px;
+        height: 40px;
+    }
+
+    .container-popup {
+        left: 100px;
+    }
+}
+  
+
+/* Responsividade para smartphones */
+@media (max-width: 450px) {
+
+    .container .conteudo-da-tela nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        border-radius: 3px;
+        list-style: none;
+    }
+    
+    .container .conteudo-da-tela nav ul div {
+        width: 120px;
+    }
+
+    #pesquisar {
+        width: 250px;
+    }
+
+    .itens-do-inventario ul {
+        width: 320px;
+    }
+
+    .itens-do-inventario ul li {
+        font-size: 10px;
+    }
+
+    .itens-do-inventario ul div {
+        width: 80px;
+    }
+
+    .container-popup {
+        left: 10px;
+    }
+    
+}
+
+@media (max-width: 650px) {
+
+    .container .conteudo-da-tela nav ul {
+        display: flex;
+        justify-content: space-around;
+        width: 400px;
+        border-radius: 3px;
+        list-style: none;
+    }
+    
+    .container .conteudo-da-tela nav ul div {
+        width: 120px;
+    }
+
+    #pesquisar {
+        width: 250px;
+    }
+
+    .itens-do-inventario ul {
+        width: 320px;
+    }
+
+    .itens-do-inventario ul li {
+        font-size: 10px;
+    }
+
+    .itens-do-inventario ul div {
+        width: 80px;
+    }
+    
+}
+
