@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome do sistema</title>
+    <link rel="stylesheet" href="pedidos_prof.css">
+</head>
+<body>
+    
+    <!--Container global-->
+    <div class="container">
+        <img src="logo.png" width="150px" alt="">
+
+        <!--div que armazena todo o conteudo abaixo-->
+        <div class="conteudo-da-tela">
+
+            <!--Barra de navegação entre as abas-->
+            <nav>
+                <ul>
+                    <li><a href="pedidos-prof.html" class="active" onclick="setActive(this)">PEDIDOS</a></li> 
+                    <li><a href="#" onclick="setActive(this)">INVENTÁRIO</a></li>
+                    <li><a href="#" onclick="setActive(this)">RELATÓRIOS</a></li>
+                </ul>
+            </nav>
+
+            <!--Caixar que contém o conteúdo de pesquisar, acionar etc-->
+            <div class="conteudo-do-pedido">
+
+                <!--pedido do professor-->
+                <div class="pedido-formado">
+                    <div>
+                        <p>NOME: FULANO DA SILVA</p>
+                        <p>DATA: XX/XX/XXXX</p>
+                    </div>
+
+                    <div class="produtos-desejados">
+                        <div>
+                            <li>Seringa 10ml c/ agulha</li>
+                            <li>Estetoscópio</li>
+                            <li>Uniforme cirúrgico</li>
+                        </div>
+                        <div>
+                            <li>10un</li>
+                            <li>5un</li>
+                            <li>5un</li>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img class="feedback-img" 
+                        src="" 
+                        width="30px"
+                        alt="">
+
+                        <p class="feedback"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="pedidos_prof.js"></script>
+</body>
+</html>
